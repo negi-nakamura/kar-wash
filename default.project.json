@@ -10,6 +10,20 @@
 		"ReplicatedStorage": {
 			"Packages": {
 				"$path": "Packages"
+			},
+			"shared": {
+				"$className": "Folder",
+				"$ignoreUnknownInstances": false,
+				"core": {
+					"$className": "Folder",
+					"$ignoreUnknownInstances": false,
+					"utility": {
+						"$ignoreUnknownInstances": false,
+						"$path": {
+							"optional": "src/core/utility"
+						}
+					}
+				}
 			}
 		},
 		"RobloxPluginGuiService": {},
@@ -26,6 +40,37 @@
 					"$ignoreUnknownInstances": false,
 					"$path": {
 						"optional": "src/core/server"
+					}
+				},
+				"feature": {
+					"$className": "Folder",
+					"$ignoreUnknownInstances": false,
+					"plot": {
+						"$className": "Folder",
+						"$ignoreUnknownInstances": false,
+						"PlotService": {
+							"$path": {
+								"optional": "src/feature/plot/PlotServiceServer.luau"
+							}
+						},
+						"builder": {
+							"$ignoreUnknownInstances": false,
+							"$path": {
+								"optional": "src/feature/plot/builder"
+							}
+						},
+						"class": {
+							"$ignoreUnknownInstances": false,
+							"$path": {
+								"optional": "src/feature/plot/class"
+							}
+						},
+						"modules": {
+							"$ignoreUnknownInstances": false,
+							"$path": {
+								"optional": "src/feature/plot/modules"
+							}
+						}
 					}
 				}
 			}

@@ -1,33 +1,45 @@
-return {
-	-- Adds to default data. Examples:
-	-- Points = 25 -- Adds "Points" to data and defaults to 25
+export type InventoryItem = {
+	itemName: string,
+	quantity: number,
+}
 
-	-- Adds "Coins" to data and defaults to 0
+export type Inventory = {
+	Pills: { [string]: InventoryItem },
+	Elixirs: { [string]: InventoryItem },
+}
+
+export type PlayerData = {
+	Coins: number,
+	Inventory: Inventory,
+
+	session: {
+		plotId: string?,
+	},
+
+	Server: {},
+
+	leaderstats: {
+		["💰 Coins"]: string,
+	},
+}
+
+local DEFAULT_DATA: PlayerData = {
 	Coins = 0,
 
-	-- Example table for default data
-	
 	Inventory = {
-		Pills = {}, -- [itemId] = {itemName = string, quantity = number}
-		Elixirs = {}, -- [itemId] = {itemName = string, quantity = number}
+		Pills = {},
+		Elixirs = {},
 	},
 
-	
-	--Cultivation = {
-	--	Environment = "Normal",
-	--},
-
-	-- Non-persistent data. Does not save on leave.
 	session = {
-		isChopping = false,
-		isSprinting = false,
+		plotId = nil,
 	},
 
-	-- Server-only data. Saves normally, but never replicates to clients.
 	Server = {},
 
-	-- Data that goes onto leaderstats/top right leaderboard display
 	leaderstats = {
 		["💰 Coins"] = "Coins",
-	}
+	},
 }
+
+return DEFAULT_DATA
