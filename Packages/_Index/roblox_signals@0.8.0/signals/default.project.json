@@ -1,0 +1,21 @@
+{
+  "name": "signals",
+  "tree": {
+    "$path": "signals.lua",
+    "Signals": {
+      "$path": "modules/signals/src"
+    },
+    "SignalsExperimental": {
+      "$path": "modules/signals-experimental/src"
+    },
+    "SignalsFlags": {
+      "$path": "modules/signals-flags/src"
+    },
+    "SignalsReact": {
+      "$path": "modules/signals-react/src"
+    },
+    "SignalsScheduler": {
+      "$path": "modules/signals-scheduler/src"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"source": ["src"],
+	"casing": "camelCase",
+	"verbatim": false,
+	"unwrap": false,
+	"globIgnorePaths": ["**/_drafts/**"],
+	"luau": {
+		"output": "default.project.json",
+		"build": "src"
+	},
+	"project": {
+		"name": "kar_wash",
+		"tree": {
+			"$className": "DataModel",
+			"ReplicatedStorage": {
+				"Packages": {
+					"$path": "Packages"
+				}
+			}
+		}
+	}
+}

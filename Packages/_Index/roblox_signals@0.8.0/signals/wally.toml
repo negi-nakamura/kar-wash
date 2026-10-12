@@ -1,0 +1,21 @@
+[package]
+name = "roblox/signals"
+description = "Scalable and minimal reactive programming framework for Luau."
+version = "0.8.0"
+license = "MIT"
+authors = ["Roblox <noreply@roblox.com>"]
+realm = "shared"
+registry = "https://github.com/upliftgames/wally-index"
+repository = "https://github.com/Roblox/signals"
+
+[place]
+shared-packages = "game.ReplicatedStorage.Packages"
+
+[dependencies]
+React = "jsdotlua/react@17.2.1"
+
+[dev-dependencies]
+Jest = "jsdotlua/jest@3.10.0"
+JestBenchmark = "jsdotlua/jest-benchmark@3.10.0"
+JestGlobals = "jsdotlua/jest-globals@3.10.0"
+ReactRoblox = "jsdotlua/react-roblox@17.2.1"

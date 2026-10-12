@@ -1,0 +1,59 @@
+{
+	"globIgnorePaths": [
+		"**/_drafts/**"
+	],
+	"name": "kar_wash",
+	"tree": {
+		"$className": "DataModel",
+		"Lighting": {},
+		"ReplicatedFirst": {},
+		"ReplicatedStorage": {
+			"Packages": {
+				"$path": "Packages"
+			}
+		},
+		"RobloxPluginGuiService": {},
+		"ServerScriptService": {
+			"server": {
+				"$className": "Folder",
+				"$ignoreUnknownInstances": false,
+				"Server": {
+					"$path": {
+						"optional": "src/(startup)/Server.server.luau"
+					}
+				},
+				"core": {
+					"$ignoreUnknownInstances": false,
+					"$path": {
+						"optional": "src/core/server"
+					}
+				}
+			}
+		},
+		"ServerStorage": {},
+		"SoundService": {},
+		"StarterGui": {},
+		"StarterPack": {},
+		"StarterPlayer": {
+			"StarterCharacterScripts": {},
+			"StarterPlayerScripts": {
+				"client": {
+					"$className": "Folder",
+					"$ignoreUnknownInstances": false,
+					"Client": {
+						"$path": {
+							"optional": "src/(startup)/Client.client.luau"
+						}
+					},
+					"core": {
+						"$ignoreUnknownInstances": false,
+						"$path": {
+							"optional": "src/core/client"
+						}
+					}
+				}
+			}
+		},
+		"Workspace": {}
+	}
+}
